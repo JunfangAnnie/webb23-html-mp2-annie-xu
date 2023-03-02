@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie Xu, minip. 2</title>
+    <link href="Style/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="Image/logo.png">
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <a href="index.html"><img id="logo" src="Image/logo.png" alt="Logo"></a>
+            <!--Navbar i header-->
+            <nav>
+                <ul>
+                    <li><a class="btn" href="index.html">Start</a></li>
+                    <li><a class="btn" href="meny.html">Meny</a></li>
+                    <li><a class="btn active" href="bokabord.html">Boka bord</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1>BOKA BORD</h1>
+            <p>Avbokning måste ske senast två timmar innan bokad tid.</p>
+            <!--Formulär för bokning med olika inputs-->
+            <form>
+                <label for="name">Namn: </label>
+                <input type="text" id="name" name="name">
+
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+                <label for="booking">Datum: </label>
+                <input type="date" id="booking" name="booking">
+
+                <label for="appt">Önskad tid:</label>
+                <input type="time" id="appt" name="appt">
+
+                <label for="message">Övriga önskemål: </label>
+                <textarea id="message" name="message" rows="10" cols="22" placeholder="Önskemål, allergier etc."></textarea><br>
+
+                <button type="submit">Skicka bokning</button>
+            </form>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+                <div>
+                    <h3>Hitta oss</h3>
+                    <h5>ADRESS</h5>
+                    <p>Lantmannagatan 46 B <br>214 48 Malmö</p>
+                </div>
+                <div>
+                    <h3>Kontakt</h3>
+                    <h5>TELEFON</h5>
+                    <p><a href="tel:040434443">040-43 44 43</a></p>
+                    <h5>E-MAIL</h5>
+                    <p><a href="mailto:hecheng@restaurang.se">hecheng@restaurang.se</a></p>
+                    </div>
+                    <div>
+                        <h3>Följ oss</h3>
+                        <a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="Image/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img class="socialmedia" src="Image/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                <p id="copyright">Restaurang He Cheng © 2023</p>
+            </footer>
+    </div>
+</body>
+</html>
